@@ -41,3 +41,6 @@ test/fixtures/pglite-snapshot.version
 
 # Private brain reports — never check these in (per CLAUDE.md privacy rule)
 reports/network-intelligence/
+
+# WorkDazi 打包产物（由 scripts/build-kernel-dist.mjs 生成）
+dist-kernel/

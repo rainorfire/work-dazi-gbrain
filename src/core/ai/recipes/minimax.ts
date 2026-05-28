@@ -38,6 +38,16 @@ export const minimax: Recipe = {
       // halving in the gateway catches token-limit errors at runtime.
       max_batch_tokens: 4096,
     },
+    chat: {
+      models: ['MiniMax-M2.7', 'MiniMax-M2.5', 'abab6.5-chat', 'abab6.5s-chat'],
+      supports_tools: true,
+      supports_subagent_loop: true,
+      supports_prompt_cache: false,
+      max_context_tokens: 245760,
+      cost_per_1m_input_usd: 0.30,
+      cost_per_1m_output_usd: 1.20,
+      price_last_verified: '2026-05-27',
+    },
   },
   setup_hint:
     'Get an API key at https://www.minimaxi.com, then `export MINIMAX_API_KEY=...`',
